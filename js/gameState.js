@@ -1,6 +1,6 @@
 function initState() {
-    let startX = Math.floor(Math.random()* 1000);
-    let startY = Math.floor(Math.random()* 500);
+    let posX = 0;
+    let posY = Math.floor(Math.random()* 1000);
     
     return {
         player: 'BoyanK',
@@ -8,9 +8,10 @@ function initState() {
         charmander: {
             width: 87,
             height: 98,
-            posX: startX,
-            posY: startY,
+            posX,
+            posY,
             cover: 'cover',
+            speed: 10
         },
         keys: {
             KeyA: false,

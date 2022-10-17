@@ -5,9 +5,7 @@ let playScreen = document.getElementsByClassName('play-game')[0]
 let state = initState()
 let game = prepareGame()
 
-// playScreen.addEventListener('keyup', ()=>{
-//     console.log('keyup');
-// })
+
 const availableKeys = [
     'KeyA',
     'KeyS',
