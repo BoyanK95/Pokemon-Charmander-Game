@@ -20,15 +20,15 @@ function modifyCharmanderPos(state, game) {
     let {charmander} = state;
     
     if (state.keys.KeyW){
-        charmander.posY = charmander.posY - charmander.speed;
+        charmander.posY = Math.max(charmander.posY - charmander.speed, 0);
     }
     if (state.keys.KeyS){
-        charmander.posY = charmander.posY + charmander.speed;
+        charmander.posY = Math.min(charmander.posY + charmander.speed, document.body.clientHeight - charmander.height);
     }
     if (state.keys.KeyA){
-        charmander.posX = charmander.posX - charmander.speed;
+        charmander.posX = Math.max(charmander.posX - charmander.speed, 0);
     }
     if (state.keys.KeyD){
-        charmander.posX = charmander.posX + charmander.speed;
+        charmander.posX =  Math.min(charmander.posX + charmander.speed, document.body.clientWidth - charmander.width);
     }
 }
