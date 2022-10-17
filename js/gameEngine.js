@@ -19,7 +19,13 @@ function gameLoop(state, game) {
 
     //render firebal
     document.querySelectorAll('.fireball').forEach(fireball =>{
-        fireball.style.left = parseInt(fireball.style.left) + state.fireball.speed + 'px';
+        let firebalLeft = parseInt(fireball.style.left)
+        if (firebalLeft >document.body.clientWidth - 48) {
+            fireball.remove()
+        }else{
+            fireball.style.left = firebalLeft + state.fireball.speed + 'px';
+        }
+       
     })
 
     //render charmander
