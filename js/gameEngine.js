@@ -1,8 +1,10 @@
-function start() {
-    window.requestAnimationFrame(gameLoop)
+function start(state, game) {
+    let charmander  = game.createCharmander(state);
+    window.requestAnimationFrame(gameLoop.bind(null, charmander))
+    debugger
 }
 
-function gameLoop() {
+function gameLoop(charmander) {
     console.log('gameLoop');
-    window.requestAnimationFrame(gameLoop)
+    window.requestAnimationFrame(gameLoop.bind(null, charmander))
 }
