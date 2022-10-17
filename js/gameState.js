@@ -6,8 +6,8 @@ function initState() {
         player: 'BoyanK',
         score: 0,
         charmander: {
-            width: 87,
-            height: 98,
+            width: 86,
+            height: 100,
             posX,
             posY,
             cover: 'cover',

@@ -9,6 +9,12 @@ function gameLoop(state, game) {
     let {charmanderElement} = game;
     modifyCharmanderPos(state, game)
 
+    if (state.keys.Space) {
+        game.charmanderElement.style.backgroundImage =  "url('../images/charAttack.webp')";
+    }else{
+        game.charmanderElement.style.backgroundImage = "url('../images/charNormalState.png')";
+    }
+
 
     //render charmander
     charmanderElement.style.top = charmander.posY + 'px';
