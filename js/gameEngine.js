@@ -7,10 +7,11 @@ function start(state, game) {
 function gameLoop(state, game) {
     let {charmander} = state;
     let {charmanderElement} = game;
+    
     modifyCharmanderPos(state, game)
-
     if (state.keys.Space) {
         game.charmanderElement.style.backgroundImage =  "url('../images/charAttack.webp')";
+        game.createFireball(charmander, state.fireball)
     }else{
         game.charmanderElement.style.backgroundImage = "url('../images/charNormalState.png')";
     }

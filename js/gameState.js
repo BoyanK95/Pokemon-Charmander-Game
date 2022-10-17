@@ -1,6 +1,6 @@
 function initState() {
-    let posX = 0;
-    let posY = Math.floor(Math.random()* 1000);
+    let posX =  Math.floor(Math.random()* 300);
+    let posY = Math.floor(Math.random()* 500);
     
     return {
         player: 'BoyanK',
@@ -19,6 +19,11 @@ function initState() {
             KeyD: false,
             KeyW: false,
             Space: false,
+        },
+        fireball: {
+            width: 40,
+            height: 40,
+            speed: 7
         }
     }
 }

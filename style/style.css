@@ -47,3 +47,7 @@ body{
     background-color: green;
     color: #fff;
 }
+
+.fireball{
+    background-image: url('../images/fire-ball.png');
+}

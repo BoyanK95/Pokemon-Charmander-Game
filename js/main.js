@@ -17,14 +17,12 @@ const availableKeys = [
 document.addEventListener('keydown', (e)=>{
     if (availableKeys.includes(e.code)) {
         state.keys[e.code] = true;
-        console.log(e);
     }
 });
 
 document.addEventListener('keyup', (e)=>{
     if (availableKeys.includes(e.code)) {
         state.keys[e.code] = false;
-        console.log(e);
     }
 });
 

@@ -15,8 +15,20 @@ function prepareGame() {
 
       playScreen.appendChild(charmanderElement);
 
-      this.charmanderElement = charmanderElement
-      return charmanderElement
+      this.charmanderElement = charmanderElement;
+      return charmanderElement;
     },
+    createFireball(charmander, fireball){
+        let fireballElement = document.createElement('div');
+        fireballElement.classList.add('fireball');
+        fireballElement.style.position = 'absolute';
+        fireballElement.style.left = charmander.posX  + charmander.width+ 'px';
+        fireballElement.style.top = charmander.posY + 'px';
+         fireballElement.style.width = fireball.width + 'px';
+        fireballElement.style.height = fireball.height + 'px';
+        this.fireballElement = fireballElement;
+        playScreen.appendChild(fireballElement);
+        return fireballElement;
+    }
   };
 }
