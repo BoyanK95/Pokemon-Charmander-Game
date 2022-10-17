@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    font-family: 'Consolas';
+}
+.game{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.start-game{
+    background-color: rgb(186, 229, 100);
+    width: 100%;
+    height: 100%;
+}
+
+.play-game{
+    background-color: rgb(211, 137, 46);
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#startGame{
+    position: absolute;
+    left: calc(100% / 2 - 140px);
+    top: calc(100% / 2 - 7px);
+}
+
+#startGame{
+    font-size: 33px;
+    padding: 10px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Consolas';
+    background-color: rgb(175, 195, 123);
+}
+
+#startGame:hover{
+    background-color: green;
+    color: #fff;
+}
