@@ -4,5 +4,7 @@ let playScreen = document.getElementsByClassName('play-game')[0]
 
 function startGame(e) {
     startScreen.style.display = 'none';
-    playScreen.style.display = 'block'
+    playScreen.style.display = 'block';
+
+    start()
 }
