@@ -17,6 +17,11 @@ function gameLoop(state, game) {
     }
 
 
+    //render firebal
+    document.querySelectorAll('.fireball').forEach(fireball =>{
+        fireball.style.left = parseInt(fireball.style.left) + state.fireball.speed + 'px';
+    })
+
     //render charmander
     charmanderElement.style.top = charmander.posY + 'px';
     charmanderElement.style.left = charmander.posX + 'px';

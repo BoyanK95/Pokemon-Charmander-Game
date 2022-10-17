@@ -23,7 +23,7 @@ function prepareGame() {
         fireballElement.classList.add('fireball');
         fireballElement.style.position = 'absolute';
         fireballElement.style.left = charmander.posX  + charmander.width+ 'px';
-        fireballElement.style.top = charmander.posY + 'px';
+        fireballElement.style.top = charmander.posY  + 20+ 'px';
          fireballElement.style.width = fireball.width + 'px';
         fireballElement.style.height = fireball.height + 'px';
         this.fireballElement = fireballElement;
